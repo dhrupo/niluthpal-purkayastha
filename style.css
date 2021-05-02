@@ -1,0 +1,279 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.color-primary {
+  color: #fc604d;
+}
+
+.color-secondary {
+  color: #98aab9;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fc604d;
+  transition: 0.3s ease-out;
+}
+
+#home {
+  height: 100%;
+  position: relative;
+}
+
+.my-navbar {
+  padding: 0px 0px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  transition: all 0.5s ease-out;
+  padding: 0;
+}
+
+.my-navbar .navbar-brand:hover {
+  color: #fc604d;
+  transition: 0.3s ease-out;
+}
+
+.my-navbar ul li {
+  padding: 20px;
+}
+
+.my-navbar ul li a {
+  text-decoration: none;
+  color: #98aab9;
+}
+
+.my-navbar ul li a:hover {
+  color: #fc604d;
+  transition: 0.3s ease-out;
+}
+
+.banner {
+  background-color: #ebeff3;
+  height: 100%;
+}
+
+#particles-js {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.banner-text {
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-text h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.banner-text a {
+  text-decoration: none;
+}
+
+.banner-text a:hover {
+  color: #fc604d;
+  transition: 0.3s ease-out;
+}
+
+.menu-bg {
+  background: #fff;
+  box-shadow: 0 2px 10px -1px rgba(87, 97, 100, 0.35);
+  transition: 0.3s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.social-links a {
+  color: #98aab9;
+}
+
+.portfolio .card {
+  box-shadow: 5px 1px 15px #585858;
+}
+
+.about {
+  background-color: #ebeff3;
+}
+
+.about h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.about ul {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.about ul li {
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #585858;
+  background-color: #585858;
+  list-style: none;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about ul li i {
+  color: #fc604d;
+}
+
+.fromLeft {
+  animation-name: fromLeft;
+  animation-duration: 4s;
+}
+
+.fromRight {
+  animation-name: fromRight;
+  animation-duration: 4s;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.testimonial-item {
+  padding: 15px;
+  margin: 15px;
+  background-color: #ebeff3;
+  border-radius: 10px;
+}
+
+.testimonial-item p {
+  font-size: 16px;
+}
+
+.tns-nav > [aria-controls] {
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  margin: 5px 7px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #98aab9;
+}
+
+.tns-outer [data-action] {
+  display: none;
+}
+
+.tns-nav > [aria-controls]:hover {
+  background: #fc604d;
+  transition: 0.3s ease-in-out;
+}
+
+.contact {
+  background-color: #ebeff3;
+}
+
+.contact h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.details {
+  padding: 30px;
+  background-color: #585858;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #585858;
+}
+
+.details i {
+  font-size: 24px;
+}
+
+.my-btn {
+  display: inline-block;
+  color: #fff;
+  background: none;
+  padding: 20px 25px;
+  border: 1px solid #fc604d;
+  font-size: 18px;
+  border-radius: 0px;
+  font-weight: 700;
+  background: #fc604d;
+  text-transform: capitalize;
+}
+
+.contact .form-control {
+  display: block;
+  border: 0px;
+  width: 100%;
+  height: 45px;
+  padding: 5px 0px;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0px;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+
+.my-btn:hover {
+  background-color: #e7250c;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  height: 200px;
+  background-color: #585858;
+}
+
+footer .social-links a {
+  color: #fc604d;
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-navbar {
+    background-color: #fff;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
